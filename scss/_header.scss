@@ -1,0 +1,146 @@
+header {
+    width: 100%;
+    height: 0;
+    background: $header_BG;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: 0.3s all;
+    overflow: hidden;
+    z-index: 99;
+
+    &.display {
+        height: 80px;
+        transition-delay: 0.5s;
+    }
+
+    //list
+    nav {
+        width: 1000px;
+        height: 100%;
+        margin: 0 auto;
+
+        ul {
+            width: 100%;
+            height: 100%;
+            display: flex;
+    
+            &.forNormal {
+
+                li {
+                    width: 20%;
+                    height: 100%;
+                    
+                    button {
+                        width: 100%;
+                        height: 100%;
+                        background: none;
+                        border: none;
+                        color: $mainColor_2;
+                        font-size: 1.25rem;
+                        font-weight: bold;
+                        position: relative;
+                        overflow: hidden;
+    
+                        &:hover,&:active,&.active {
+    
+                            &::before {
+                                transform: translateX(0);
+                            }
+                        }
+    
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            width: 100%;
+                            height: 4px;
+                            background: $mainBorder_1;
+                            left: 0;
+                            bottom: 0;
+                            transition: 0.3s all;
+                            transform: translateX(-100%);
+                        }
+                    }
+                }
+            }
+
+            &.forRwd {
+                display: none;
+                justify-content: space-between;
+
+                li {
+                    width: 50px;
+                    height: 100%;
+
+                    button {
+                        width: 100%;
+                        height: 100%;
+                        background: none;
+                        border: none;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        transition: 0.3s all;
+
+                        &:hover,&:active,&.active {
+                            
+                            i {
+                                opacity: 0.8;
+                                transform: scale(1.2);
+                            }
+                        }
+
+                        i {
+                            color: $mainColor_2;
+                            font-size: 1.75rem;
+                            transition: 0.3s all;
+                        }
+
+                        span {
+                            display: block;
+                            width: 70%;
+                            height: 5px;
+                            background: $mainColor_2;
+                            border-radius: 30px;
+                            margin-bottom: 3px;
+
+                            &:last-child {
+                                margin: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    //downList
+    .downList {
+        width: 100%;
+        height: 0;
+        background: $filter;
+        transition: 0.3s all;
+        overflow: hidden;
+
+        ul {
+            width: 100%;
+            height: auto;
+
+            li {
+                width: 100%;
+                height: 50px;
+
+                button {
+                    width: 100%;
+                    height: 100%;
+                    background: none;
+                    border: none;
+                    color: $mainColor_1;
+                    font-size: 1.25rem;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}

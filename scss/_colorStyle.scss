@@ -1,0 +1,87 @@
+//BG
+$BG: #192126;
+$filter: #00000080;
+
+//color
+$mainColor_1: #ffffff;
+$mainColor_2: #080b0d;
+
+$subColor_1: #40da2c;
+$subColor_2: #ffc13c;
+ 
+//border
+$mainBorder_1: #080b0d;
+
+//header
+$header_BG: #f2e6d8;
+
+//enterAnime
+$enterAnime_lineBG: #ffffff;
+
+//swiper
+$swiper_arrow: #000000;
+
+//titleStyle
+@mixin titleStyle_1 {
+    color: #ffffff;
+    font-size: 2.25rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+@mixin titleStyle_2 {
+    color: #ffc13c;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+@mixin nextBtn {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: none;
+    border: none;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        border-style: solid;
+        border-width: 50px 40px 0 40px;
+        border-color: #f2e6d8 transparent;
+        pointer-events: none;
+        animation: nextBtn 1s linear 0s infinite;
+    }
+
+    @keyframes nextBtn {
+        0% {
+            transform: translate(-50%,-50%) scale(1);
+        }
+
+        25% {
+            transform: translate(-50%,-80%) scaleX(1.2) scaleY(0.45);
+        }
+
+        45% {
+            transform: translate(-50%,-50%) scaleX(0.35) scaleY(1.5);
+        }
+
+        65% {
+            transform: translate(-50%,0%) scaleX(1.45) scaleY(0.65);
+        }
+
+        85% {
+            transform: translate(-50%,-50%) scale(1);
+        }
+
+        100% {
+            transform: translate(-50%,-50%) scale(1);
+        }
+    }
+}

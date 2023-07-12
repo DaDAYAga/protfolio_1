@@ -1,0 +1,52 @@
+//home
+.home .intro .map {
+    width: 600px;
+    height: 600px;
+    background: url('../images/other/map.jpg') no-repeat center;
+    background-size: contain;
+    margin: 0 auto;
+}
+.home .intro .mapDemo {
+    width: 600px;
+    height: 600px;
+    background: url('../images/other/mapDemo.jpg') no-repeat center;
+    background-size: contain;
+    margin: 0 auto 30px;
+}
+.home .intro .moveDemo {
+    width: 600px;
+    height: 600px;
+    background: url('../images/other/moveDemo.jpg') no-repeat center;
+    background-size: contain;
+    margin: 0 auto;
+}
+.home .intro .playDemo_1 {
+    width: 600px;
+    height: 600px;
+    background: url('../images/other/playDemo_1.jpg') no-repeat center;
+    background-size: contain;
+    margin: 0 auto 30px;
+}
+.home .intro .playDemo_2 {
+    width: 600px;
+    height: 600px;
+    background: url('../images/other/playDemo_2.jpg') no-repeat center;
+    background-size: contain;
+    margin: 0 auto;
+}
+
+//enterAnime
+.enterAnime .logo_1,
+.enterAnime .logo_1::before {
+    width: 500px;
+    height: 500px;
+    background: url('../images/logo_1.png') no-repeat center;
+    background-size: contain;
+}
+.enterAnime .logo_2,
+.enterAnime .logo_2::before {
+    width: 500px;
+    height: 500px;
+    background: url('../images/logo_2.png') no-repeat center;
+    background-size: contain;
+}
