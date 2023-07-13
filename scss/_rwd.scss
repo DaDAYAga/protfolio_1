@@ -203,6 +203,7 @@
 }
 @media only screen and (max-width: 768px) {
     html {
+        font-size: 4vw;
 
         body  {
 
@@ -235,6 +236,43 @@
                         width: 100%;
                         height: 0;
                         padding-top: 100%;
+                    }
+                }
+            }
+
+            .enterAnime {
+
+                .logoBox {
+                    transform: translateY(-10%);
+
+                    .logo_1,
+                    .logo_1::before,
+                    .logo_2,
+                    .logo_2::before {
+                        width: 50vw;
+                        height: 50vw;
+                        margin: 0 auto;
+                    }
+
+                    .logo_2 {
+
+                        &.logo_2 {
+                            margin: 0 auto;
+                        }
+                    }
+
+                    button {
+                        white-space: nowrap;
+                        right: 50%;
+                        transform: translateX(50%);
+
+                        &:active {
+                            transform: translateX(50%) scale(0.9);
+                        }
+                    }
+
+                    .subText {
+                        margin-top: 20vw;
                     }
                 }
             }
