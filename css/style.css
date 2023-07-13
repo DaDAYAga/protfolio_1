@@ -1241,10 +1241,6 @@ html body .bg {
     font-size: 1.5rem;
     margin: 0 2vw;
   }
-  html body .enterAnime .logoBox {
-    -webkit-transform: translateY(-10%);
-            transform: translateY(-10%);
-  }
   html body .enterAnime .logoBox .logo_1,
   html body .enterAnime .logoBox .logo_1::before,
   html body .enterAnime .logoBox .logo_2,
